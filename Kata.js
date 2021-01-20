@@ -14,4 +14,13 @@ function getAverage(marks){
   
   
   getAverage([1,2,3,4,5,])
-    // 3);
+    // 3
+
+
+    // Get the biggest number first
+function superSize(num){
+  return parseInt(num.toString().split('').sort((a, b) => b - a).join(''));
+  }
+  
+  superSize(414)
+  // 441
