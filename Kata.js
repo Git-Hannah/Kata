@@ -11,8 +11,7 @@ function getAverage(marks){
     let average = sum / marks.length;
     return Math.floor(average);
   }
-  
-  
+    
   getAverage([1,2,3,4,5,])
     // 3
 
@@ -24,3 +23,17 @@ function superSize(num){
   
   superSize(414)
   // 441
+
+// Beginner
+// You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+  function check(a, x) {
+    if (a.includes(x)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+    
+  check(['what', 'a', 'great', 'kata'], 'kat')
+    // false);
+
