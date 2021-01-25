@@ -37,3 +37,23 @@ function superSize(num){
   check(['what', 'a', 'great', 'kata'], 'kat')
     // false);
 
+//A Strange Trip to the Market
+
+function isLockNessMonster(s) {
+  //FIND THE LOCH NESS MONSTER. SAVE YOUR TREE FIDDY
+  if (s.includes('tree fiddy')) {
+    return 'Run it is Nessie!';
+  }
+  if (s.includes('3.50')) {
+    return 'Run it is Nessie!'
+  }
+   if (s.includes('three fifty')) {
+    return 'Run it is Nessie!'
+  } else {
+    return false
+  }
+}
+
+
+isLockNessMonster("Your girlscout cookies are ready to ship. Your total comes to three fifty")
+!isLockNessMonster("Yo, I heard you were on the lookout for Nessie. Let me know if you need assistance.")
