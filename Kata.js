@@ -57,3 +57,13 @@ function isLockNessMonster(s) {
 
 isLockNessMonster("Your girlscout cookies are ready to ship. Your total comes to three fifty")
 !isLockNessMonster("Yo, I heard you were on the lookout for Nessie. Let me know if you need assistance.")
+
+
+// Count the smiley faces!
+
+
+
+//Over The Road
+function overTheRoad(address, n){
+  return 2 * n + 1 - address  
+}
