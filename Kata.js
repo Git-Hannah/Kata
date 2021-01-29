@@ -67,3 +67,15 @@ isLockNessMonster("Your girlscout cookies are ready to ship. Your total comes to
 function overTheRoad(address, n){
   return 2 * n + 1 - address  
 }
+
+//The falling speed of petals
+//When it's spring Japanese cherries blossom, it's called "sakura" and it's admired a lot. The petals start to fall in late April.
+//Write a function that receives the speed (in cm/s) of a petal as input, and returns the time it takes for that petal to reach the ground from the same branch.
+function sakuraFall(v) {
+  if (v <= 0){
+    return 0 
+  }
+else {return 5*80/v
+     }
+}
+
