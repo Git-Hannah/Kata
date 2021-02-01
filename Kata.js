@@ -79,3 +79,14 @@ else {return 5*80/v
      }
 }
 
+//Friend or Foe?
+//Make a program that filters a list of strings and returns a list with only your friends name in it.
+function friend(friends){
+  const result = friends.filter(friend => friend.length == 4);
+  return result
+}
+
+friend(["Ryan", "Kieran", "Mark"])
+//["Ryan", "Mark"]
+
+
