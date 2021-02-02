@@ -89,4 +89,12 @@ function friend(friends){
 friend(["Ryan", "Kieran", "Mark"])
 //["Ryan", "Mark"]
 
+//All Star Code Challenge #22
+//Create a function called toTime() that takes an integer argument of seconds and converts the value into a string describing how many hours and minutes comprise that many seconds.
+function toTime(seconds) {
+  let hours = Math.floor(seconds / 3600);
+  let minutes = Math.floor(seconds % 3600 /60)
+  return hours + ' hour(s) and ' + minutes + ' minute(s)'
+
+}
 
