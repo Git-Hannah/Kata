@@ -98,3 +98,18 @@ function toTime(seconds) {
 
 }
 
+//Responsible Drinking
+//Codewars Bar recommends you drink 1 glass of water per standard drink so you're not hungover tomorrow morning.
+function hydrate(s) {
+  result = 0;
+  s = s.match(/\d/g);
+  s.map(x => result += parseInt(x));
+  if (result <= 1){
+    return result+ ' glass of water'
+  }else {
+  return result+ ' glasses of water'
+}
+}
+
+hydrate("2 glasses of wine and 1 shot")
+//"3 glasses of water");
