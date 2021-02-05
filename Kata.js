@@ -113,3 +113,22 @@ function hydrate(s) {
 
 hydrate("2 glasses of wine and 1 shot")
 //"3 glasses of water");
+
+//heggeleggleggo
+//Egg Talk.
+//Insert an "egg" after each consonant. If there are no consonants, there will be no eggs. Argument will consist of a string with only alphabetic characters and possibly some spaces.
+function heggeleggleggo(word){
+  vowel = ['a', 'e', 'i', 'o', 'u',' ','A','E','I','O','U']
+  result = ''
+  for (i=0;i<word.length;i++){
+    if (!vowel.includes(word[i])){
+      result += word[i] + 'egg';
+    } else {
+      result += word[i]
+  }
+}
+   return result
+}
+
+heggeleggleggo("hello world")
+//"heggeleggleggo"
