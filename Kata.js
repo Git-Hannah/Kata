@@ -126,3 +126,21 @@ function heggeleggleggo(word){
 
 heggeleggleggo("hello world")
 //"heggeleggleggo"
+
+
+//Hells Kitchen
+//Gordon Ramsay shouts. He shouts and swears. There may be something wrong with him.
+
+function gordon(a){
+ 
+  return a.replace(/a/ig, '@')
+    .replace(/[eiou]/ig, '*')
+    .toUpperCase()
+    .split(' ')
+    .map(element => element + '!!!!')
+    .join(' ')
+}
+
+gordon('What feck damn cake')
+//'WH@T!!!! F*CK!!!! D@MN!!!! C@K*!!!!');
+
