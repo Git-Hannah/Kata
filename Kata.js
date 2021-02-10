@@ -144,3 +144,22 @@ function gordon(a){
 gordon('What feck damn cake')
 //'WH@T!!!! F*CK!!!! D@MN!!!! C@K*!!!!');
 
+//Holiday V - SeaSick Snorkelling
+//Thanks to the effects of El Nino this year my holiday snorkelling trip was akin to being in a washing machine... Not fun at all.
+//Given a string made up of '~' and '_' representing waves and calm respectively, your job is to check whether a person would become seasick.
+function seaSick(x){
+  let count = 0;
+  console.log(x.length)
+  for (let i = 0; i < x.length-1; i++){
+    if (x[i] !== x[i+1]){
+     // console.log(x[i],x[i+1],x[i+2])
+      count+=1
+    }}
+    console.log(count)
+    if ((count / x.length*100) > 20){
+      return 'Throw Up'
+    } else {
+      return 'No Problem'
+    }
+  }
+  
