@@ -171,3 +171,27 @@ function seaSick(x){
 function fireFight(s){
   return s.replace(/Fire/g, '~~')
 }
+
+//Elevator Distance
+//Imagine you start on the 5th floor of a building, then travel down to the 2nd floor, then back up to the 8th floor. You have travelled a total of 3 + 6 = 9 floors of distance.
+//1)
+function elevatorDistance(array) {
+  distance = [];
+  for (i=0; i<array.length-1; i++){
+    console.log(i)
+    distance.push(Math.abs(array[i] - (array[i+1])))
+  }
+  return distance.reduce((a,b) => a+b)
+}
+//2)
+function elevatorDistance(array) {
+  var distance = 0;
+  for (var i = 0; i < array.length - 1; i++) {
+    distance += Math.abs(array[i] - array[i + 1]);
+  }
+  return distance;
+}
+
+elevatorDistance([5,2,8])
+// 9
+
