@@ -195,3 +195,16 @@ function elevatorDistance(array) {
 elevatorDistance([5,2,8])
 // 9
 
+//Spoonerize Me
+//A spoonerism is a spoken phrase in which the first letters of two of the words are swapped around, often with amusing results.
+
+function spoonerize(words) {    
+  let splitWords = words.split(' ') 
+ return (splitWords[1][0] + splitWords[0].slice(1))
+ + ' ' +
+ (splitWords[0][0] + splitWords[1].slice(1))  
+}
+
+spoonerize("nit picking")
+//"pit nicking"
+
