@@ -247,9 +247,8 @@ killer(
 );
 //'James'
 
-
 //Most sales
-//You work in the best consumer electronics corporation, and your boss wants to find out which three products generate the most revenue. 
+//You work in the best consumer electronics corporation, and your boss wants to find out which three products generate the most revenue.
 function top3(products, amounts, prices) {
   // make an object
   // name: product
@@ -272,18 +271,35 @@ function top3(products, amounts, prices) {
   for (let product of sorted) {
     orderedList.push(product.name);
   }
-  return orderedList.slice(0,3);
+  return orderedList.slice(0, 3);
 }
 
 //Disemvowel Trolls
 //Trolls are attacking your comment section!
 //A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
 //Your task is to write a function that takes a string and return a new string with all vowels removed.
-function disemvowel(str) {   
-  return str
-    .replace(/[aeiou]/gi,'')    
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, "");
 }
-disemvowel("This website is for losers LOL!")
+disemvowel("This website is for losers LOL!");
 //"Ths wbst s fr lsrs LL!")
 
+//Double Trouble
+//Given an array of integers (x), and a target (t), you must find out if any two consecutive numbers in the array sum to t. If so, remove the second number.
+//add the first integer-value to the second
+//compare the sum to the given number
+//if they are equal, remove the second integer
+//continue comparison
+function trouble(x, t) {
+  for (let i = 0; i < x.length - 1; i++) {
+    console.log(x[i] + x[i + 1]);
+    if (x[i] + x[i + 1] === t) {
+      x.splice(i + 1, 1);
+      i--;
+    }
+  }
+  return x;
+}
 
+trouble([4, 1, 1, 1, 4], 2);
+//[2, 2]
