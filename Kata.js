@@ -303,3 +303,33 @@ function trouble(x, t) {
 
 trouble([4, 1, 1, 1, 4], 2);
 //[2, 2]
+
+
+//Beginner Series #3 Sum of Numbers
+//Given two integers a and b, which can be positive or negative, find the sum of all the integers between including them too and return it. If the two numbers are equal return a or b.
+function getSum( a,b )
+{  
+  let list = [];
+  if(a>b){
+     for (let i = b; i<= a; i++){
+    list.push(i);
+    //console.log(list)
+  } 
+} else
+  {
+    for (let i = a; i<= b; i++){
+    list.push(i);
+    console.log(list)
+  }  
+  }
+  if(a==b){
+    return a
+  } else {  
+  return list.reduce((a,b) => a+b);
+  }
+}
+
+getSum(0,-1)
+  //-1
+getSum(-2,4)
+//7
