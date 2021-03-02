@@ -333,3 +333,26 @@ getSum(0,-1)
   //-1
 getSum(-2,4)
 //7
+
+
+//The Coupon Code
+//Your online store likes to give out coupons for special occasions. Some customers try to cheat the system by entering invalid codes or using expired coupons.
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+
+  let date = new Date(currentDate);
+  let expired = new Date(expirationDate);
+    console.log(enteredCode, correctCode, currentDate, expirationDate)
+    console.log(date, expired)
+  
+    if(enteredCode === correctCode
+      &&
+      date <= expired){
+      return true
+    } else {
+      return false
+    }
+}
+
+checkCoupon('123','123','September 5, 2014','October 1, 2014')
+  //true}
+  
