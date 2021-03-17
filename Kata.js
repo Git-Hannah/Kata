@@ -356,3 +356,24 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
 checkCoupon('123','123','September 5, 2014','October 1, 2014')
   //true}
   
+//The old switcheroo 2
+//Write that takes in a string str and replaces all the letters with their respective positions in the English alphabet.
+
+function encode(str) {
+  const alph = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+  const end = []
+   for (let i=0;i<str.length; i++){
+    if(alph.includes(str[i].toLowerCase())){
+      end.push(alph.indexOf(str[i].toLowerCase())+1)
+    }
+     else {
+       end.push(str[i])
+     }
+  }
+    return end.join('')
+  }
+  
+  encode('abc-#@5')
+  //'1234'
+
+  
